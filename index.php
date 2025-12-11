@@ -53,6 +53,21 @@ if (isset($_POST['btnSimpan'])) {
     }
 }
 
+//  Mode hapus data
+if (isset($_GET['mode']) && $_GET['mode'] == "hapus") {
+
+    $id = $_GET['id'];
+
+    $hapus = mysqli_query($koneksi, "DELETE FROM tbarang WHERE id_barang='$id'");
+
+    if ($hapus) {
+        echo "<script>alert('Data berhasil dihapus');window.location='index.php';</script>";
+    } else {
+        echo "<script>alert('Gagal menghapus data');</script>";
+    }
+}
+
+
 ?>
 
 <!DOCTYPE html>

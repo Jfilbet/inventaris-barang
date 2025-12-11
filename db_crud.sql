@@ -35,18 +35,18 @@ CREATE TABLE `tbarang` (
   `jumlah` int(4) DEFAULT NULL,
   `satuan` varchar(15) DEFAULT NULL,
   `tanggal_diterima` date DEFAULT NULL,
-  `tanggal_disimpan` timestamp NOT NULL DEFAULT current_timestamp() ON UPDATE current_timestamp(),
-  `tanggal_simpan` timestamp NOT NULL DEFAULT current_timestamp()
+  `tanggal_disimpan` timestamp NOT NULL DEFAULT current_timestamp() ON UPDATE current_timestamp()
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_general_ci;
 
 --
 -- Dumping data for table `tbarang`
 --
 
-INSERT INTO `tbarang` (`id_barang`, `kode`, `nama`, `asal`, `jumlah`, `satuan`, `tanggal_diterima`, `tanggal_disimpan`, `tanggal_simpan`) VALUES
-(9, 'INV-2025-003', 'laptop', 'Pembelian', 2, 'Unit', '2025-12-10', '2025-12-10 15:18:02', '2025-12-10 14:52:58'),
-(10, 'INV-2025-004', 'Printer', 'Sumbangan', 5, 'Pcs', '2025-12-03', '2025-12-10 15:21:30', '2025-12-10 15:21:17'),
-(11, 'INV-2025-001', 'Kursi ', 'Pembelian', 10, 'Unit', '2025-12-06', '2025-12-10 15:59:15', '2025-12-10 15:59:15');
+
+INSERT INTO `tbarang` (`id_barang`, `kode`, `nama`, `asal`, `jumlah`, `satuan`, `tanggal_diterima`, `tanggal_disimpan`) VALUES
+(15, 'INV-2025-001', 'Printer', 'Pembelian', 2, 'Unit', '2025-12-02', '2025-12-11 04:24:59'),
+(16, 'INV-2025-002', 'Kursi ', 'Pembelian', 10, 'Unit', '2025-12-08', '2025-12-11 04:27:47');
+
 
 --
 -- Indexes for dumped tables
